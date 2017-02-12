@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #5D6975;
+  text-decoration: underline;
+}
+
+body {
+  background-color:gray; 
+	  margin: 0;
+}
+page {
+  background: white;
+  display: block;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+  margin-left: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  width: 21cm;
+  height: 29.7cm; 
+  overflow:hidden;
+  background-color:white;  padding:15px; 
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+#logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#logo img {
+  width: 90px;
+}
+
+h1 {
+  border-top: 1px solid  #5D6975;
+  border-bottom: 1px solid  #5D6975;
+  color: #5D6975;
+  font-size: 2.4em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 20px 0;
+  background: url(dimension.png);
+}
+
+#project {
+  float: left;
+}
+
+#project span {
+  color: #5D6975;
+  text-align: right;
+  width: 52px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+#company {
+  float: right;
+  text-align: right;
+}
+
+#project div,
+#company div {
+  white-space: nowrap;        
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table tr:nth-child(2n-1) td {
+  background: #F5F5F5;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+table th {
+  padding: 5px 20px;
+  color: #5D6975;
+  border-bottom: 1px solid #C1CED9;
+  white-space: nowrap;        
+  font-weight: normal;
+}
+
+table .service,
+table .desc {
+  text-align: left;
+}
+
+table td {
+  padding: 20px;
+  text-align: right;
+}
+
+table td.service,
+table td.desc {
+  vertical-align: top;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1.2em;
+}
+
+table td.grand {
+  border-top: 1px solid #5D6975;;
+}
+
+#notices .notice {
+  color: #5D6975;
+  font-size: 1.2em;
+}
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Example 1</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+  </head>
+  <body>
+  <page>
+    <header class="clearfix">
+      <div id="logo">
+        <img src="logo.png">
+      </div>
+      <h1>INVOICE 3-2-1</h1>
+      <div id="company" class="clearfix">
+        <div>Company Name</div>
+        <div>455 Foggy Heights,<br /> AZ 85004, US</div>
+        <div>(602) 519-0450</div>
+        <div><a href="mailto:company@example.com">company@example.com</a></div>
+      </div>
+      <div id="project">
+        <div><span>PROJECT</span> Website development</div>
+        <div><span>CLIENT</span> John Doe</div>
+        <div><span>ADDRESS</span> 796 Silver Harbour, TX 79273, US</div>
+        <div><span>EMAIL</span> <a href="mailto:john@example.com">john@example.com</a></div>
+        <div><span>DATE</span> August 17, 2015</div>
+        <div><span>DUE DATE</span> September 17, 2015</div>
+      </div>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th class="service">SERVICE</th>
+            <th class="desc">DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>QTY</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="service">Design</td>
+            <td class="desc">Creating a recognizable design solution based on the company's existing visual identity</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">26</td>
+            <td class="total">$1,040.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development HTML</td>
+            <td class="desc">Developing a Content Management System-based Website</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development JAVA SCRIPT</td>
+            <td class="desc">Developing in JavaScript</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development PHP</td>
+            <td class="desc">Developing in PHP</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development SQL</td>
+            <td class="desc">Developing in SQL</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+            <td class="service">Development C#</td>
+            <td class="desc">Developing in C#</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development C++</td>
+            <td class="desc">Developing in C++</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Ruby</td>
+            <td class="desc">Developing in Ruby</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Python</td>
+            <td class="desc">Developing in Python</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Visual Basic</td>
+            <td class="desc">Developing in Visual Basic</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+</page>	
+<page>		  
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th class="service">SERVICE</th>
+            <th class="desc">DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>QTY</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="service">Development Autocad</td>
+            <td class="desc">Developing maps in Autocad</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development animation in Blender</td>
+            <td class="desc">Developing animation in Blender</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Rendering in Sketchup PRO</td>
+            <td class="desc">Rendering in Sketchup PRO</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Windows 7 driver</td>
+            <td class="desc">Development Windows 7 driver</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Windows 10 driver</td>
+            <td class="desc">Development Windows 10 driver</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Linux driver</td>
+            <td class="desc">Development Linux driver</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Android application</td>
+            <td class="desc">Development Android application</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development IOS application</td>
+            <td class="desc">Development IOS application</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Cloud application</td>
+            <td class="desc">Development Cloud application</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Development Communication protocol</td>
+            <td class="desc">Development TCP/IP Communication protocol</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Accomodation costs</td>
+            <td class="desc">Accomodation costs in USA</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">80</td>
+            <td class="total">$3,200.00</td>
+          </tr>
+          <tr>
+            <td class="service">SEO</td>
+            <td class="desc">Optimize the site for search engines (SEO)</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">20</td>
+            <td class="total">$800.00</td>
+          </tr>
+          <tr>
+            <td class="service">Testing</td>
+            <td class="desc">14 Months test period</td>
+            <td class="unit">$400.00</td>
+            <td class="qty">14</td>
+            <td class="total">$6400.00</td>
+          </tr>
+          <tr>
+            <td class="service">Maintanance</td>
+            <td class="desc">10 Changes of web page on demand</td>
+            <td class="unit">$100.00</td>
+            <td class="qty">1</td>
+            <td class="total">$100.00</td>
+          </tr>
+       </tbody>
+      </table>  
+    </main>
+</page>	
+<page>	
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th class="service">SERVICE</th>
+            <th class="desc">DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>QTY</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="service">Licences for videos</td>
+            <td class="desc">10 tutorial videos</td>
+            <td class="unit">$10.00</td>
+            <td class="qty">100</td>
+            <td class="total">$1000.00</td>
+          </tr>
+          <tr>
+            <td class="service">Licences for pictures</td>
+            <td class="desc">134 pictures</td>
+            <td class="unit">$5.00</td>
+            <td class="qty">134</td>
+            <td class="total">$670.00</td>
+          </tr>
+          <tr>
+            <td class="service">Web hosting</td>
+            <td class="desc">Web Hosting on appache linux server</td>
+            <td class="unit">$100.00</td>
+            <td class="qty">12</td>
+            <td class="total">$1200.00</td>
+          </tr>
+          <tr>
+            <td class="service">Training</td>
+            <td class="desc">Initial training sessions for staff responsible for uploading web content</td>
+            <td class="unit">$40.00</td>
+            <td class="qty">4</td>
+            <td class="total">$160.00</td>
+          </tr>
+          <tr>
+            <td colspan="4">SUBTOTAL</td>
+            <td class="total">$5,200.00</td>
+          </tr>
+          <tr>
+            <td colspan="4">TAX 25%</td>
+            <td class="total">$1,300.00</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="grand total">GRAND TOTAL</td>
+            <td class="grand total">$6,500.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div class="notice">A finance charge of 1.5% will be made on unpaid balances after 30 days.</div>
+      </div>
+    </main>
+</page>	
+  </body>
+</html>
